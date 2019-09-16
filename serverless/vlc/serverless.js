@@ -1,4 +1,4 @@
 module.exports = functionsBuilder =>
-	functionsBuilder.addWebFunction('POST', '/hello', async (ctx, req) => {
+	functionsBuilder.addWebFunction('GET', '/hello', async (ctx, req) => {
 		return { hello: 'world' };
 	});
